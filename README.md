@@ -19,6 +19,7 @@ css/styles.css      design system (variáveis de cor, tipografia, responsivo)
 js/main.js          menu mobile, animação de entrada, copiar código Pix
 assets/img/         imagens extraídas do material oficial da clínica
 assets/img/pix-qr.svg  QR Code Pix gerado a partir do BR Code oficial
+assets/img/esp/     fotos das especialidades (Freepik, licença gratuita com atribuição no rodapé)
 assets/video/tour.mp4  loop mudo de 11s (hero + seção Estrutura)
 assets/video/ortomed.mp4  vídeo original da clínica, sem cortes (com áudio)
 ```

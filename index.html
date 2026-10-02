@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ortomed Vilhena | Ortopedia, Traumatologia e Cirurgia</title>
 <meta name="description" content="Ortomed, clínica de Ortopedia, Traumatologia e Cirurgia em Vilhena-RO. Corpo clínico especializado, estrutura moderna e atendimento humanizado. Agende pelo WhatsApp.">
+<meta name="theme-color" content="#f4ece0">
 <meta property="og:title" content="Ortomed Vilhena | Ortopedia e Traumatologia">
 <meta property="og:description" content="Um novo capítulo no cuidado com a sua saúde. Av. Pres. Nasser, 785, Jardim das Oliveiras, Vilhena-RO.">
 <meta property="og:image" content="assets/img/fachada.jpg">
@@ -12,17 +13,18 @@
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
+<!-- ================= CABEÇALHO FLUTUANTE ================= -->
 <header class="header" id="topo">
-  <div class="wrap header__in">
+  <div class="header__in">
     <a class="brand" href="#topo" aria-label="Ortomed, início">
-      <img src="assets/img/logo.png" alt="" width="44" height="44">
+      <img src="assets/img/logo.png" alt="" width="40" height="40">
       <span class="brand__txt">
         <strong>OrtoMed</strong>
         <em>Vilhena · RO</em>
@@ -38,12 +40,12 @@
       <a href="#contato">Contato</a>
     </nav>
 
-    <a class="btn btn--gold header__cta" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">
-      Agendar consulta <span aria-hidden="true">↗</span>
+    <a class="btn btn--dark btn--sm header__cta" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">
+      Agendar <span class="btn__ic" aria-hidden="true">&#8599;</span>
     </a>
 
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
   </div>
 </header>
@@ -52,123 +54,171 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero">
-    <div class="hero__bg" aria-hidden="true">
-      <video src="assets/video/tour.mp4" poster="assets/video/tour-poster.jpg"
-             autoplay muted loop playsinline preload="auto" tabindex="-1"></video>
-    </div>
-    <div class="hero__aurora" aria-hidden="true">
-      <span class="blob blob--gold"></span>
-      <span class="blob blob--amber"></span>
-      <span class="blob blob--rose"></span>
-      <span class="blob blob--sky"></span>
-    </div>
-
-    <div class="wrap hero__in">
-      <h1 class="hero__title reveal">
-        Cuidado que<br>
-        devolve o seu<br>
-        <em>movimento</em>
-      </h1>
-
-      <div class="hero__foot">
-        <p class="hero__lead reveal">
-          Mais que uma clínica. A Ortomed nasceu da experiência, da dedicação e do sonho
-          de oferecer um atendimento mais próximo e humanizado.
-        </p>
-        <div class="hero__acts reveal">
-          <a class="btn btn--dark" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Agendar consulta <span aria-hidden="true">&#8599;</span></a>
-          <a class="linkline" href="#especialidades">Ver especialidades</a>
-        </div>
+    <div class="hero__panel">
+      <div class="hero__aurora" aria-hidden="true">
+        <span class="blob blob--sky"></span>
+        <span class="blob blob--gold"></span>
+        <span class="blob blob--amber"></span>
+        <span class="blob blob--cream"></span>
       </div>
-    </div>
 
-    <div class="wrap">
-      <dl class="facts reveal">
-        <div><dt>+7</dt><dd>anos cuidando de vidas através da Ortopedia</dd></div>
-        <div><dt>03</dt><dd>especialistas no corpo clínico</dd></div>
-        <div><dt>100%</dt><dd>agendamento direto pelo WhatsApp</dd></div>
-        <div><dt>RO</dt><dd>atendimento em Vilhena e toda a região</dd></div>
-      </dl>
-    </div>
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <span class="chip reveal"><i class="chip__dot"></i> Agenda aberta no novo consultório</span>
 
-    <a class="scrolldown" href="#clinica" aria-label="Ver mais conteúdo">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-           stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M12 4v15"/><path d="M6 13l6 6 6-6"/>
-      </svg>
-    </a>
-  </section>
+          <h1 class="hero__title reveal">
+            Cuidado que devolve o seu <em>movimento</em>
+          </h1>
 
-  <!-- ================= DESTAQUE ================= -->
-  <section class="feature" id="clinica">
-    <div class="wrap feature__grid">
-      <article class="feature__main reveal">
-        <div class="feature__title">
-          <h2>Ortopedia e Traumatologia<br>de alta especialização</h2>
+          <p class="hero__lead reveal">
+            Mais que uma clínica. A Ortomed nasceu da experiência, da dedicação e do sonho
+            de oferecer um atendimento mais próximo e humanizado.
+          </p>
+
+          <div class="hero__acts reveal">
+            <a class="btn btn--dark" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">
+              Agendar consulta <span class="btn__ic" aria-hidden="true">&#8599;</span>
+            </a>
+            <a class="btn btn--glass" href="#especialidades">Ver especialidades</a>
+          </div>
+
+          <ul class="hero__docs reveal" aria-label="Nossos médicos">
+            <li><img src="assets/img/dr-rui.jpg" alt="Dr. Rui Ramos"></li>
+            <li><img src="assets/img/dr-fabio.jpg" alt="Dr. Fábio Yonamine"></li>
+            <li><img src="assets/img/dra-camila.jpg" alt="Dra. Camila Muniz"></li>
+            <li class="hero__docs-txt"><strong>3 especialistas</strong><span>com registro de especialista (RQE)</span></li>
+          </ul>
         </div>
-        <p class="feature__lead">
-          Cuidamos da sua saúde musculoesquelética, auxiliando na <strong>prevenção, diagnóstico
-          e tratamento</strong> de diversas condições ortopédicas, com atenção e responsabilidade
-          em cada etapa do acompanhamento.
-        </p>
-        <div class="feature__foot">
-          <span class="pill">Diagnóstico · Tratamento · Acompanhamento</span>
-          <a class="btn btn--ghost" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">Fale conosco <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
 
-      <aside class="feature__side reveal">
-        <div class="fcard fcard--img">
-          <img src="assets/img/recepcao.jpg" alt="Recepção da clínica Ortomed" loading="lazy">
-          <div class="fcard__cap">
-            <h3>Um espaço feito para acolher</h3>
-            <p>Ambiente preparado para proporcionar conforto, segurança e tranquilidade.</p>
+        <div class="hero__media reveal" data-parallax="0.04">
+          <div class="hero__frame">
+            <video src="assets/video/tour.mp4" poster="assets/video/tour-poster.jpg"
+                   autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
+          </div>
+          <div class="float float--a">
+            <span class="float__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </span>
+            <span><strong>Vilhena · RO</strong><em>Jardim das Oliveiras</em></span>
+          </div>
+          <div class="float float--b">
+            <strong>+7</strong>
+            <em>anos cuidando de vidas pela Ortopedia</em>
           </div>
         </div>
-      </aside>
+      </div>
+
+      <a class="scrolldown" href="#marquee" aria-label="Ver mais conteúdo">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 4v15"/><path d="M6 13l6 6 6-6"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= FAIXA ANIMADA ================= -->
+  <div class="marquee" id="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Ortopedia</span><i>✦</i><span>Traumatologia</span><i>✦</i><span>Cirurgia Geral</span><i>✦</i>
+      <span>Cirurgia Bariátrica</span><i>✦</i><span>Aparelho Digestivo</span><i>✦</i><span>Atendimento humanizado</span><i>✦</i>
+      <span>Ortopedia</span><i>✦</i><span>Traumatologia</span><i>✦</i><span>Cirurgia Geral</span><i>✦</i>
+      <span>Cirurgia Bariátrica</span><i>✦</i><span>Aparelho Digestivo</span><i>✦</i><span>Atendimento humanizado</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ================= A CLÍNICA ================= -->
+  <section class="about" id="clinica">
+    <div class="wrap about__grid">
+      <div class="about__media reveal">
+        <figure class="about__main" data-parallax="-0.02">
+          <img src="assets/img/recepcao.jpg" alt="Recepção da clínica Ortomed" loading="lazy">
+          <figcaption class="about__cap">
+            <h3>Um espaço feito para acolher</h3>
+            <p>Ambiente preparado para proporcionar conforto, segurança e tranquilidade.</p>
+          </figcaption>
+        </figure>
+        <figure class="about__mini" data-parallax="0.05">
+          <img src="assets/img/fachada.jpg" alt="Fachada da Ortomed" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="about__copy">
+        <span class="eyebrow reveal">A Clínica</span>
+        <h2 class="reveal">Ortopedia e Traumatologia de <em>alta especialização</em></h2>
+        <p class="about__lead reveal">
+          Cuidamos da sua saúde musculoesquelética, auxiliando na prevenção, diagnóstico
+          e tratamento de diversas condições ortopédicas, com atenção e responsabilidade
+          em cada etapa do acompanhamento.
+        </p>
+
+        <div class="stats">
+          <div class="stat reveal"><strong data-count="7" data-prefix="+">+7</strong><span>anos de experiência em Ortopedia</span></div>
+          <div class="stat reveal"><strong data-count="3" data-pad="2">03</strong><span>especialistas no corpo clínico</span></div>
+          <div class="stat reveal"><strong data-count="6" data-pad="2">06</strong><span>áreas de atuação</span></div>
+          <div class="stat reveal"><strong data-count="100" data-suffix="%">100%</strong><span>agendamento pelo WhatsApp</span></div>
+        </div>
+
+        <a class="linkline reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">Fale com a nossa equipe <span aria-hidden="true">&#8599;</span></a>
+      </div>
     </div>
   </section>
 
   <!-- ================= EQUIPE ================= -->
   <section class="team" id="equipe">
     <div class="wrap">
-      <div class="sechead reveal">
+      <div class="sechead">
         <div>
-          <span class="eyebrow"><i>01</i> Nossa equipe</span>
-          <h2>Corpo clínico<br>especializado</h2>
+          <span class="eyebrow reveal">Nossa equipe</span>
+          <h2 class="reveal">Corpo clínico <em>especializado</em></h2>
         </div>
-        <p>A Ortomed reúne profissionais com formação e registro de especialista (RQE) em
+        <p class="reveal">A Ortomed reúne profissionais com formação e registro de especialista (RQE) em
         Ortopedia, Traumatologia, Cirurgia Geral, Bariátrica e do Aparelho Digestivo.</p>
       </div>
 
       <div class="team__grid">
         <article class="doc reveal">
-          <div class="doc__ph"><img src="assets/img/dr-rui.jpg" alt="Dr. Rui Ramos dos Santos" loading="lazy"></div>
+          <div class="doc__ph">
+            <img src="assets/img/dr-rui.jpg" alt="Dr. Rui Ramos dos Santos" loading="lazy">
+            <span class="doc__badge">Ortopedia</span>
+          </div>
           <div class="doc__body">
             <h3>Dr. Rui Ramos</h3>
-            <p class="doc__crm">CRM/RO 3472 · RQE 2052</p>
             <p class="doc__tag">Ortopedia e Traumatologia</p>
-            <a class="doc__cta" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20tudo%20bem%20%3F%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Rui%20Ramos" target="_blank" rel="noopener">Agendar horário <span aria-hidden="true">↗</span></a>
+            <p class="doc__crm">CRM/RO 3472 · RQE 2052</p>
+            <a class="doc__cta" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20tudo%20bem%20%3F%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Rui%20Ramos" target="_blank" rel="noopener">
+              Agendar horário <span class="doc__go" aria-hidden="true">&#8599;</span>
+            </a>
           </div>
         </article>
 
         <article class="doc reveal">
-          <div class="doc__ph"><img src="assets/img/dr-fabio.jpg" alt="Dr. Fábio Yonamine" loading="lazy"></div>
+          <div class="doc__ph">
+            <img src="assets/img/dr-fabio.jpg" alt="Dr. Fábio Yonamine" loading="lazy">
+            <span class="doc__badge">Cirurgia</span>
+          </div>
           <div class="doc__body">
             <h3>Dr. Fábio Yonamine</h3>
+            <p class="doc__tag">Bariátrica · Aparelho Digestivo · Cirurgia Geral</p>
             <p class="doc__crm">CRM/MT 4160 · RQE 2837 · RQE 5168</p>
-            <p class="doc__tag">Cirurgia Bariátrica · Aparelho Digestivo · Cirurgia Geral</p>
-            <a class="doc__cta" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20tudo%20bem%20%3F%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Fabio%20Yonamine" target="_blank" rel="noopener">Agendar horário <span aria-hidden="true">↗</span></a>
+            <a class="doc__cta" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20tudo%20bem%20%3F%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Fabio%20Yonamine" target="_blank" rel="noopener">
+              Agendar horário <span class="doc__go" aria-hidden="true">&#8599;</span>
+            </a>
           </div>
         </article>
 
         <article class="doc reveal">
-          <div class="doc__ph"><img src="assets/img/dra-camila.jpg" alt="Dra. Camila Muniz" loading="lazy"></div>
+          <div class="doc__ph">
+            <img src="assets/img/dra-camila.jpg" alt="Dra. Camila Muniz" loading="lazy">
+            <span class="doc__badge">Cirurgia</span>
+          </div>
           <div class="doc__body">
             <h3>Dra. Camila Muniz</h3>
-            <p class="doc__crm">CRM/MT 8412 · RQE 5392 · CRM/RO 4125 · RQE 3048</p>
             <p class="doc__tag">Cirurgia Geral</p>
-            <a class="doc__cta" href="https://wa.me/5569992641628?text=Ol%C3%A1%20Ortomed%2C%20tudo%20bem%20%3F%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Camila%20Muniz" target="_blank" rel="noopener">Agendar horário <span aria-hidden="true">↗</span></a>
+            <p class="doc__crm">CRM/MT 8412 · RQE 5392 · CRM/RO 4125 · RQE 3048</p>
+            <a class="doc__cta" href="https://wa.me/5569992641628?text=Ol%C3%A1%20Ortomed%2C%20tudo%20bem%20%3F%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Camila%20Muniz" target="_blank" rel="noopener">
+              Agendar horário <span class="doc__go" aria-hidden="true">&#8599;</span>
+            </a>
           </div>
         </article>
       </div>
@@ -177,54 +227,103 @@
 
   <!-- ================= ESPECIALIDADES ================= -->
   <section class="specs" id="especialidades">
-    <div class="wrap">
-      <div class="sechead reveal">
-        <div>
-          <span class="eyebrow"><i>02</i> Áreas de atuação</span>
-          <h2>Explore nossas<br>especialidades</h2>
+    <div class="specs__panel">
+      <div class="specs__glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="sechead sechead--dark">
+          <div>
+            <span class="eyebrow reveal">Áreas de atuação</span>
+            <h2 class="reveal">Explore nossas <em>especialidades</em></h2>
+          </div>
+          <p class="reveal">Da avaliação ao tratamento cirúrgico, reunimos em um só lugar as especialidades
+          que cuidam da sua mobilidade e da sua qualidade de vida.</p>
         </div>
-        <p>Da avaliação ao tratamento cirúrgico, reunimos em um só lugar as especialidades
-        que cuidam da sua mobilidade e da sua qualidade de vida.</p>
+
+        <div class="specs__grid">
+          <a class="spec reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Ortopedia" target="_blank" rel="noopener">
+            <img src="assets/img/esp/ortopedia.jpg" alt="" loading="lazy">
+            <span class="spec__n">01</span>
+            <div class="spec__body">
+              <h3>Ortopedia</h3>
+              <p>Prevenção, diagnóstico e tratamento das condições que afetam ossos, articulações e músculos.</p>
+              <span class="spec__go">Agendar <i aria-hidden="true">&#8599;</i></span>
+            </div>
+          </a>
+          <a class="spec reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Traumatologia" target="_blank" rel="noopener">
+            <img src="assets/img/esp/trauma.jpg" alt="" loading="lazy">
+            <span class="spec__n">02</span>
+            <div class="spec__body">
+              <h3>Traumatologia</h3>
+              <p>Fraturas, entorses e lesões, com acompanhamento próximo até a recuperação completa.</p>
+              <span class="spec__go">Agendar <i aria-hidden="true">&#8599;</i></span>
+            </div>
+          </a>
+          <a class="spec reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Cirurgia%20Bari%C3%A1trica" target="_blank" rel="noopener">
+            <img src="assets/img/esp/bariatrica.jpg" alt="" loading="lazy">
+            <span class="spec__n">03</span>
+            <div class="spec__body">
+              <h3>Cirurgia Bariátrica</h3>
+              <p>Avaliação e condução cirúrgica do tratamento da obesidade, com suporte em todas as etapas.</p>
+              <span class="spec__go">Agendar <i aria-hidden="true">&#8599;</i></span>
+            </div>
+          </a>
+          <a class="spec reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Cirurgia%20do%20Aparelho%20Digestivo" target="_blank" rel="noopener">
+            <img src="assets/img/esp/cirurgia.jpg" alt="" loading="lazy">
+            <span class="spec__n">04</span>
+            <div class="spec__body">
+              <h3>Aparelho Digestivo</h3>
+              <p>Cirurgia para condições de esôfago, estômago, fígado e intestino.</p>
+              <span class="spec__go">Agendar <i aria-hidden="true">&#8599;</i></span>
+            </div>
+          </a>
+          <a class="spec reveal" href="https://wa.me/5569992641628?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Cirurgia%20Geral" target="_blank" rel="noopener">
+            <img src="assets/img/esp/digestivo.jpg" alt="" loading="lazy">
+            <span class="spec__n">05</span>
+            <div class="spec__body">
+              <h3>Cirurgia Geral</h3>
+              <p>Consulta, indicação cirúrgica e acompanhamento pré e pós-operatório.</p>
+              <span class="spec__go">Agendar <i aria-hidden="true">&#8599;</i></span>
+            </div>
+          </a>
+          <a class="spec reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener">
+            <img src="assets/img/esp/avaliacao.jpg" alt="" loading="lazy">
+            <span class="spec__n">06</span>
+            <div class="spec__body">
+              <h3>Avaliação e retorno</h3>
+              <p>Consultas de avaliação, segunda opinião e acompanhamento contínuo do tratamento.</p>
+              <span class="spec__go">Agendar <i aria-hidden="true">&#8599;</i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMO FUNCIONA ================= -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="sechead sechead--center">
+        <span class="eyebrow reveal">Como funciona</span>
+        <h2 class="reveal">Do primeiro contato à <em>recuperação</em></h2>
       </div>
 
-      <div class="speclist">
-        <a class="specrow reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Ortopedia" target="_blank" rel="noopener">
-          <span class="specrow__n">01</span>
-          <h3>Ortopedia</h3>
-          <p>Prevenção, diagnóstico e tratamento das condições que afetam ossos, articulações e músculos.</p>
-          <span class="specrow__go" aria-hidden="true">&#8599;</span>
-        </a>
-        <a class="specrow reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Traumatologia" target="_blank" rel="noopener">
-          <span class="specrow__n">02</span>
-          <h3>Traumatologia</h3>
-          <p>Fraturas, entorses e lesões, com acompanhamento próximo até a recuperação completa.</p>
-          <span class="specrow__go" aria-hidden="true">&#8599;</span>
-        </a>
-        <a class="specrow reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Cirurgia%20Bari%C3%A1trica" target="_blank" rel="noopener">
-          <span class="specrow__n">03</span>
-          <h3>Cirurgia Bariátrica</h3>
-          <p>Avaliação e condução cirúrgica do tratamento da obesidade, com suporte em todas as etapas.</p>
-          <span class="specrow__go" aria-hidden="true">&#8599;</span>
-        </a>
-        <a class="specrow reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Cirurgia%20do%20Aparelho%20Digestivo" target="_blank" rel="noopener">
-          <span class="specrow__n">04</span>
-          <h3>Aparelho Digestivo</h3>
-          <p>Cirurgia para condições de esôfago, estômago, fígado e intestino.</p>
-          <span class="specrow__go" aria-hidden="true">&#8599;</span>
-        </a>
-        <a class="specrow reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Cirurgia%20Geral" target="_blank" rel="noopener">
-          <span class="specrow__n">05</span>
-          <h3>Cirurgia Geral</h3>
-          <p>Consulta, indicação cirúrgica e acompanhamento pré e pós-operatório.</p>
-          <span class="specrow__go" aria-hidden="true">&#8599;</span>
-        </a>
-        <a class="specrow reveal" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener">
-          <span class="specrow__n">06</span>
-          <h3>Avaliação e retorno</h3>
-          <p>Consultas de avaliação, segunda opinião e acompanhamento contínuo do tratamento.</p>
-          <span class="specrow__go" aria-hidden="true">&#8599;</span>
-        </a>
-      </div>
+      <ol class="steps__grid">
+        <li class="step reveal">
+          <span class="step__n">1</span>
+          <h3>Agende pelo WhatsApp</h3>
+          <p>Fale com a recepção, escolha o especialista e o melhor horário para você.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">2</span>
+          <h3>Consulta e diagnóstico</h3>
+          <p>Avaliação completa, com tempo para ouvir, examinar e explicar cada detalhe.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">3</span>
+          <h3>Tratamento e acompanhamento</h3>
+          <p>Um plano feito para o seu caso, com retorno e suporte até a recuperação.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -234,12 +333,12 @@
   ============================================================= -->
   <section class="quotes" id="depoimentos">
     <div class="wrap">
-      <div class="sechead reveal">
+      <div class="sechead">
         <div>
-          <span class="eyebrow"><i>03</i> Depoimentos</span>
-          <h2>O que dizem<br>nossos pacientes</h2>
+          <span class="eyebrow reveal">Depoimentos</span>
+          <h2 class="reveal">O que dizem nossos <em>pacientes</em></h2>
         </div>
-        <p>A confiança de quem passa pela Ortomed é o que move o nosso trabalho.
+        <p class="reveal">A confiança de quem passa pela Ortomed é o que move o nosso trabalho.
         Deixe também a sua avaliação e ajude outras pessoas a encontrar o cuidado certo.</p>
       </div>
 
@@ -254,7 +353,7 @@
           </figcaption>
         </figure>
 
-        <figure class="quote reveal">
+        <figure class="quote quote--feat reveal">
           <div class="quote__stars" aria-label="5 de 5 estrelas">★★★★★</div>
           <blockquote>Clínica nova, limpa e organizada. Fui atendida no horário marcado
           e saí com todas as minhas dúvidas respondidas.</blockquote>
@@ -276,36 +375,38 @@
       </div>
 
       <div class="quotes__cta reveal">
-        <a class="btn btn--ghost" href="https://search.google.com/local/writereview?placeid=ChIJxfBT5shruZMR0TnvcSAOPiQ" target="_blank" rel="noopener">Deixar minha avaliação <span aria-hidden="true">★</span></a>
+        <a class="btn btn--glass" href="https://search.google.com/local/writereview?placeid=ChIJxfBT5shruZMR0TnvcSAOPiQ" target="_blank" rel="noopener">Deixar minha avaliação no Google <span aria-hidden="true">★</span></a>
       </div>
     </div>
   </section>
 
   <!-- ================= ESTRUTURA ================= -->
   <section class="struct" id="estrutura">
-    <div class="wrap struct__grid">
-      <div class="struct__copy reveal">
-        <span class="eyebrow"><i>04</i> Nossa estrutura</span>
-        <h2>Moderna e<br><em>acolhedora</em></h2>
-        <p>Um novo espaço pensado para cuidar da sua saúde e da sua qualidade de vida.
-        Estamos prontos para receber você e sua família.</p>
-        <ul class="ticks">
-          <li>Recepção confortável e climatizada</li>
-          <li>Consultórios equipados para avaliação ortopédica</li>
-          <li>Fácil acesso na Av. Presidente Nasser</li>
-          <li>Atendimento por agendamento</li>
-        </ul>
-      </div>
-      <div class="struct__gal reveal">
-        <figure class="struct__vid">
-          <video src="assets/video/tour.mp4" poster="assets/video/tour-poster.jpg"
-                 autoplay muted loop playsinline preload="metadata"
-                 aria-label="Vídeo com um tour pela clínica Ortomed"></video>
-          <figcaption>Um tour pela clínica</figcaption>
-        </figure>
-        <div class="struct__pics">
-          <img src="assets/img/recepcao.jpg" alt="Recepção da Ortomed" loading="lazy">
-          <img src="assets/img/fachada-wide.jpg" alt="Fachada da Ortomed" loading="lazy">
+    <div class="struct__panel">
+      <div class="wrap struct__grid">
+        <div class="struct__copy">
+          <span class="eyebrow reveal">Nossa estrutura</span>
+          <h2 class="reveal">Moderna e <em>acolhedora</em></h2>
+          <p class="reveal">Um novo espaço pensado para cuidar da sua saúde e da sua qualidade de vida.
+          Estamos prontos para receber você e sua família.</p>
+          <ul class="ticks">
+            <li class="reveal">Recepção confortável e climatizada</li>
+            <li class="reveal">Consultórios equipados para avaliação ortopédica</li>
+            <li class="reveal">Fácil acesso na Av. Presidente Nasser</li>
+            <li class="reveal">Atendimento por agendamento</li>
+          </ul>
+        </div>
+        <div class="struct__gal">
+          <figure class="struct__vid reveal">
+            <video src="assets/video/tour.mp4" poster="assets/video/tour-poster.jpg"
+                   autoplay muted loop playsinline preload="metadata"
+                   aria-label="Vídeo com um tour pela clínica Ortomed"></video>
+            <figcaption>Um tour pela clínica</figcaption>
+          </figure>
+          <div class="struct__pics">
+            <img class="reveal" src="assets/img/recepcao.jpg" alt="Recepção da Ortomed" loading="lazy">
+            <img class="reveal" src="assets/img/fachada-wide.jpg" alt="Fachada da Ortomed" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
@@ -314,25 +415,25 @@
   <!-- ================= CONTATO ================= -->
   <section class="contact" id="contato">
     <div class="wrap contact__grid">
-      <div class="contact__copy reveal">
-        <span class="eyebrow"><i>05</i> Contato</span>
-        <h2>Ficou com alguma dúvida? Estamos aqui.</h2>
-        <p>Estamos na Av. Presidente Nasser, no Jardim das Oliveiras. Chame no WhatsApp
+      <div class="contact__copy">
+        <span class="eyebrow reveal">Contato</span>
+        <h2 class="reveal">Ficou com alguma dúvida? <em>Estamos aqui.</em></h2>
+        <p class="reveal">Estamos na Av. Presidente Nasser, no Jardim das Oliveiras. Chame no WhatsApp
         para agendar ou venha conhecer a clínica pessoalmente.</p>
 
         <ul class="info">
-          <li>
+          <li class="reveal">
             <span class="info__ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
             </span>
             <div>
               <strong>Endereço</strong>
               <a href="https://maps.app.goo.gl/bnANo23tNcwL6d4H6" target="_blank" rel="noopener">Av. Pres. Nasser, 785, Jardim das Oliveiras, Vilhena/RO</a>
             </div>
           </li>
-          <li>
+          <li class="reveal">
             <span class="info__ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6a1 1 0 0 0-1 .2l-1.6 1.6a15 15 0 0 1-6.5-6.5l1.6-1.6a1 1 0 0 0 .2-1A11.4 11.4 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1 17 17 0 0 0 17 17 1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 4.2 2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L7 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
             </span>
             <div>
               <strong>WhatsApp</strong>
@@ -340,9 +441,9 @@
               <a href="https://wa.me/5569992641628" target="_blank" rel="noopener">(69) 99264-1628 · Dra. Camila Muniz</a>
             </div>
           </li>
-          <li>
+          <li class="reveal">
             <span class="info__ic" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm5 16.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM8 5v11h8V5H8z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
             </span>
             <div>
               <strong>Redes e links</strong>
@@ -364,7 +465,7 @@
             <strong>Clínica Ortomed</strong>
             <span>Av. Pres. Nasser, 785, Jardim das Oliveiras</span>
           </div>
-          <a class="btn btn--gold" href="https://maps.app.goo.gl/bnANo23tNcwL6d4H6" target="_blank" rel="noopener">Traçar rota <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--dark btn--sm" href="https://maps.app.goo.gl/bnANo23tNcwL6d4H6" target="_blank" rel="noopener">Traçar rota <span class="btn__ic" aria-hidden="true">&#8599;</span></a>
         </div>
       </div>
     </div>
@@ -372,70 +473,84 @@
 
   <!-- ================= PIX ================= -->
   <section class="pix" id="pix">
-    <div class="wrap pix__in reveal">
-      <div class="pix__qr">
-        <img src="assets/img/pix-qr.svg" alt="QR Code Pix da Ortomed" width="220" height="220">
-        <span>Aponte a câmera do seu banco</span>
-      </div>
-
-      <div class="pix__copy">
-        <span class="eyebrow"><i>06</i> Pagamento</span>
-        <h2>Pague sua consulta<br>com Pix</h2>
-        <p>Escaneie o QR Code ou copie a chave abaixo. O pagamento cai direto na conta
-        da clínica, em nome de <strong>Ortomed Vilhena</strong>.</p>
-
-        <div class="pixkey">
-          <div class="pixkey__info">
-            <em>Chave CNPJ</em>
-            <strong id="pix-key">61.031.445/0001-23</strong>
-          </div>
-          <button class="btn btn--gold" type="button" id="pix-copy"
-                  data-pix="00020126360014br.gov.bcb.pix0114610314450001235204000053039865802BR5915ORTOMED VILHENA6009SAO PAULO62070503***630451C7">
-            Copiar código Pix <span aria-hidden="true">⧉</span>
-          </button>
+    <div class="pix__panel reveal">
+      <div class="pix__glow" aria-hidden="true"></div>
+      <div class="pix__in">
+        <div class="pix__qr">
+          <img src="assets/img/pix-qr.svg" alt="QR Code Pix da Ortomed" width="200" height="200">
+          <span>Aponte a câmera do seu banco</span>
         </div>
-        <p class="pix__note" id="pix-msg" role="status">O botão copia o código Pix copia e cola completo.</p>
+
+        <div class="pix__copy">
+          <span class="eyebrow">Pagamento</span>
+          <h2>Pague sua consulta com <em>Pix</em></h2>
+          <p>Escaneie o QR Code ou copie a chave abaixo. O pagamento cai direto na conta
+          da clínica, em nome de <strong>Ortomed Vilhena</strong>.</p>
+
+          <div class="pixkey">
+            <div class="pixkey__info">
+              <em>Chave CNPJ</em>
+              <strong id="pix-key">61.031.445/0001-23</strong>
+            </div>
+            <button class="btn btn--gold" type="button" id="pix-copy"
+                    data-pix="00020126360014br.gov.bcb.pix0114610314450001235204000053039865802BR5915ORTOMED VILHENA6009SAO PAULO62070503***630451C7">
+              Copiar código Pix <span aria-hidden="true">⧉</span>
+            </button>
+          </div>
+          <p class="pix__note" id="pix-msg" role="status">O botão copia o código Pix copia e cola completo.</p>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
 
+<!-- ================= RODAPÉ ================= -->
 <footer class="footer">
-  <div class="wrap footer__grid">
-    <div>
-      <a class="brand brand--f" href="#topo">
-        <img src="assets/img/logo.png" alt="" width="52" height="52">
-        <span class="brand__txt"><strong>OrtoMed</strong><em>Atividades Médicas</em></span>
-      </a>
-      <p class="footer__about">Uma nova estrutura para cuidar da sua qualidade de vida.
-      Corpo clínico especializado em Vilhena, RO.</p>
+  <div class="wrap">
+    <div class="footer__cta reveal">
+      <h2>Pronto para voltar a se <em>movimentar</em> sem dor?</h2>
+      <a class="btn btn--gold" href="https://wa.me/5569992692005?text=Ol%C3%A1%20Ortomed%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Agendar pelo WhatsApp <span class="btn__ic" aria-hidden="true">&#8599;</span></a>
     </div>
-    <nav aria-label="Rodapé">
-      <h4>Navegação</h4>
-      <a href="#clinica">A Clínica</a>
-      <a href="#equipe">Corpo Clínico</a>
-      <a href="#especialidades">Especialidades</a>
-      <a href="#estrutura">Estrutura</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <div>
-      <h4>Atendimento</h4>
-      <a href="https://wa.me/5569992692005" target="_blank" rel="noopener">(69) 99269-2005</a>
-      <a href="https://wa.me/5569992641628" target="_blank" rel="noopener">(69) 99264-1628</a>
-      <a href="https://maps.app.goo.gl/bnANo23tNcwL6d4H6" target="_blank" rel="noopener">Av. Pres. Nasser, 785<br>Jardim das Oliveiras, Vilhena/RO</a>
+
+    <div class="footer__grid">
+      <div>
+        <a class="brand brand--f" href="#topo">
+          <img src="assets/img/logo.png" alt="" width="48" height="48">
+          <span class="brand__txt"><strong>OrtoMed</strong><em>Atividades Médicas</em></span>
+        </a>
+        <p class="footer__about">Uma nova estrutura para cuidar da sua qualidade de vida.
+        Corpo clínico especializado em Vilhena, RO.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h4>Navegação</h4>
+        <a href="#clinica">A Clínica</a>
+        <a href="#equipe">Corpo Clínico</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#estrutura">Estrutura</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div>
+        <h4>Atendimento</h4>
+        <a href="https://wa.me/5569992692005" target="_blank" rel="noopener">(69) 99269-2005</a>
+        <a href="https://wa.me/5569992641628" target="_blank" rel="noopener">(69) 99264-1628</a>
+        <a href="https://maps.app.goo.gl/bnANo23tNcwL6d4H6" target="_blank" rel="noopener">Av. Pres. Nasser, 785<br>Jardim das Oliveiras, Vilhena/RO</a>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <a href="https://www.instagram.com/ortomedatividadesmedicas" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/19E8RbgGsk/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://multlinks.com/ortomed" target="_blank" rel="noopener">Salvar contato</a>
+        <a href="https://multlinks.com/ortomedvha" target="_blank" rel="noopener">Chave Pix</a>
+      </div>
     </div>
-    <div>
-      <h4>Redes</h4>
-      <a href="https://www.instagram.com/ortomedatividadesmedicas" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/share/19E8RbgGsk/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://multlinks.com/ortomed" target="_blank" rel="noopener">Salvar contato</a>
-      <a href="https://multlinks.com/ortomedvha" target="_blank" rel="noopener">Chave Pix</a>
+
+    <div class="footer__word" aria-hidden="true">OrtoMed</div>
+
+    <div class="footer__bar">
+      <small>© <span id="ano"></span> Ortomed Atividades Médicas. Todos os direitos reservados.</small>
+      <small>Este site tem caráter informativo e não substitui a consulta médica. Imagens das especialidades: <a href="https://www.freepik.com" target="_blank" rel="noopener">Freepik</a>.</small>
     </div>
-  </div>
-  <div class="wrap footer__bar">
-    <small>© <span id="ano"></span> Ortomed Atividades Médicas. Todos os direitos reservados.</small>
-    <small>Este site tem caráter informativo e não substitui a consulta médica.</small>
   </div>
 </footer>
 

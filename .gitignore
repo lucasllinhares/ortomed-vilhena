@@ -3,3 +3,6 @@ Thumbs.db
 node_modules/
 assets/img/originais/
 assets/video/ortomed.mp4
+
+.vercel
+.env*

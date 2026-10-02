@@ -2,9 +2,19 @@
 (function () {
   'use strict';
 
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   /* ---- ano no rodapé ---- */
   var ano = document.getElementById('ano');
   if (ano) ano.textContent = new Date().getFullYear();
+
+  /* ---- cabeçalho muda ao rolar ---- */
+  var header = document.querySelector('.header');
+  function onScrollHeader() {
+    if (header) header.classList.toggle('is-scrolled', window.scrollY > 24);
+  }
+  onScrollHeader();
+  window.addEventListener('scroll', onScrollHeader, { passive: true });
 
   /* ---- menu mobile ---- */
   var burger = document.getElementById('burger');
@@ -25,24 +35,87 @@
     });
   }
 
-  /* ---- reveal ao rolar ---- */
+  /* ---- contadores ---- */
+  function contar(el) {
+    var alvo = parseInt(el.getAttribute('data-count'), 10);
+    var pre = el.getAttribute('data-prefix') || '';
+    var suf = el.getAttribute('data-suffix') || '';
+    var pad = parseInt(el.getAttribute('data-pad') || '0', 10);
+    var fmt = function (n) {
+      var s = String(n);
+      while (s.length < pad) s = '0' + s;
+      return pre + s + suf;
+    };
+    if (reduz) { el.textContent = fmt(alvo); return; }
+    var dur = 1600, t0 = null;
+    function passo(t) {
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(Math.round(alvo * e));
+      if (p < 1) requestAnimationFrame(passo);
+    }
+    el.textContent = fmt(0);
+    requestAnimationFrame(passo);
+  }
+
+  /* ---- revelação ao rolar (com escalonamento) ---- */
   var itens = document.querySelectorAll('.reveal');
 
   if (!('IntersectionObserver' in window)) {
     itens.forEach(function (el) { el.classList.add('is-in'); });
+    document.querySelectorAll('[data-count]').forEach(contar);
   } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-in');
+        var c = entry.target.querySelector('[data-count]');
+        if (c) contar(c);
+        io.unobserve(entry.target);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px' });
+    }, { threshold: 0.14, rootMargin: '0px 0px -50px' });
 
-    itens.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 4) * 80 + 'ms';
+    // atraso em cascata entre irmãos do mesmo grupo
+    itens.forEach(function (el) {
+      var irmaos = Array.prototype.filter.call(el.parentElement.children, function (n) {
+        return n.classList && n.classList.contains('reveal');
+      });
+      var i = irmaos.indexOf(el);
+      el.style.transitionDelay = Math.min(i, 5) * 90 + 'ms';
       io.observe(el);
+    });
+  }
+
+  /* ---- parallax suave ---- */
+  var px = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
+  if (!reduz && px.length && window.matchMedia('(min-width: 900px)').matches) {
+    var pendente = false;
+    function aplicar() {
+      pendente = false;
+      var vh = window.innerHeight;
+      px.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > vh) return;
+        var centro = r.top + r.height / 2 - vh / 2;
+        var f = parseFloat(el.getAttribute('data-parallax')) || 0;
+        el.style.translate = '0 ' + (centro * -f).toFixed(1) + 'px';
+      });
+    }
+    window.addEventListener('scroll', function () {
+      if (!pendente) { pendente = true; requestAnimationFrame(aplicar); }
+    }, { passive: true });
+    aplicar();
+  }
+
+  /* ---- brilho que segue o mouse nos cards ---- */
+  if (!reduz && window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('.spec').forEach(function (card) {
+      card.addEventListener('pointermove', function (e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
     });
   }
 
